@@ -10,7 +10,7 @@ pipeline {
         stage("Paso 1: Compliar"){
             steps {
                 script {
-                sh "echo 'Compile Code!'"
+                sh "echo 'Compile Code hola!'"
                 // Run Maven on a Unix agent.
                 sh "./mvnw clean compile -e"
                 }
