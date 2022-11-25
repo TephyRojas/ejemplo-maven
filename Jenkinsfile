@@ -7,16 +7,16 @@ pipeline {
     agent any
     stages {
 
-        stage("Paso 1: Compliar"){
+        stage("Paso 1: Compilar "){
             steps {
                 script {
-                sh "echo 'Compile Code!'"
+                sh "echo 'Compile Code  !'"
                 // Run Maven on a Unix agent.
                 sh "./mvnw clean compile -e"
                 }
             }
         }
-        stage("Paso 2: Testear"){
+        stage("Paso 2: Testear hola nuevamente yo"){
             steps {
                 script {
                 sh "echo 'Test Code!'"
