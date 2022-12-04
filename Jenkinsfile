@@ -46,6 +46,7 @@ pipeline {
         stage("Paso 4: Testear en Postman"){
             steps {
                 script{
+                    
                     sh "newman run ejemplo-maven.postman_collection.json  -n 10  --delay-request 1000"
                 }
             }
